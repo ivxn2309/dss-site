@@ -1,0 +1,24 @@
+{
+	"build": [{
+		"name": "DSS",
+		"component": ["buttonplate"],
+		"sass": ["welcome.scss"],
+		"js": ["src/welcome.js"]
+	}],
+	"project": {
+		"component-first": ["jquery"],
+		"component": ["flickerplate","navplate","modalplate","formplate"],
+		"css": ["welcome.min.css","banner.css","dss.css","nav.css","portfolio.css","contacto.css","dsssection.css"],
+		"js": ["welcome.min.js","src/script.js","src/maps.js","src/events.js","src/renderer.js"],
+		"ui": "fuse",
+		"form-colour": "aqua",
+		"icon-font": "font-awesome"
+	},
+	"build-watch": {
+    	"js": ["src/*.js"],
+    	"css": ["*.css"]
+   	},
+	"option": [
+		"font-family: 'Roboto', 'Helvetic Neue', Helvetica, Arial"
+	]
+}

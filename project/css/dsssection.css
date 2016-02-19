@@ -1,0 +1,139 @@
+.main-image-dss {
+    background-image: url(../img/dss/back-dss.png);
+}
+
+.main-image-dss h1 {
+	font-family: MagallanesB;
+	color: rgba(255,255,255,0.4);
+	text-align: center;
+	line-height: 550px;
+	font-size: 35vw;
+	padding-top: 1.4%;
+}
+
+#especialidad {
+	padding: 1% 3%;
+}
+
+#especialidad h2 {
+	padding-top: 1%; 
+	font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: CenturyB;
+}
+
+#especialidad div {
+	text-align: justify;
+	color: white;
+	font-size: 0.8rem;
+	line-height: 2rem;
+	padding-left: 1%;
+}
+
+#especialidad .row {
+	margin-bottom: 5%;
+}
+
+#especialidad .div-left {
+	padding-right: 5%;
+}
+
+#especialidad .div-right {
+	padding-right: 3%;
+}
+
+#especialidad .icon {
+	text-align: center;
+	padding-right: 1%;
+}
+
+#especialidad .icon img {
+	width: 50px;
+}
+
+#metrics {
+	background-image: url(../img/dss/metrics.png);
+	background-size: cover;
+	height: 500px;
+	margin-bottom: 4%;
+}
+
+#metrics div {
+	color: #fff;
+	text-align: center;
+	font-size: 2vw;
+	font-family: CenturyB;
+	font-weight: bold;
+	padding-top: 190px;
+	margin-top: -10%;
+	margin-bottom: -10%;
+}
+
+#metrics div h1{
+	font-size: 6vw;
+	color: #fff;
+	margin-bottom: 3%;
+}
+
+#lo-nuestro {
+	background-color: #fff;
+	font-family: CenturyB;
+	margin-bottom: -1.1%;
+}
+
+#lo-nuestro h3 {
+	text-align: center;
+	font-size: 2vw;
+	color: #999;
+}
+
+#lo-nuestro div p {
+	text-align: justify;
+	padding-right: 0%;
+	font-size: 0.85rem;
+	color: #999;
+}
+
+#lo-nuestro ul {
+	list-style: none;
+}
+
+#lo-nuestro ul li:before {
+	font-family: FontAwesome;
+	color: #000;
+	content: "\f00c";
+	font-size: 1.3rem;
+	padding-right: 10px;
+}
+
+#lo-nuestro ul li {
+	color: #999;
+	font-size: 0.85rem;
+}
+
+#lo-nuestro div img {
+	width: 100%;
+	float: none;
+}
+
+@media only screen and (min-width: 43.87em){ /* 702px */
+	#metrics div {
+		margin-top: 0;
+		margin-bottom: -25%;
+	}
+
+	#lo-nuestro {
+		margin-bottom: 1%;
+	}
+
+	#lo-nuestro div p {
+		padding-right: 17%;
+	}
+
+	#lo-nuestro div img {
+		width: 85%;
+		float: right;
+	}
+}
