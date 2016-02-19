@@ -104,17 +104,31 @@ Date: Feb 05, 2016
 	font-size: 2rem !important;
 }
 
-#portfolio .arrow-navigation.right:before {
-	content: "\f01d";	
+#portfolio .arrow-navigation.right {
+	background-image: url(../img/arrow.png);
+	background-position: center;
+	background-size: 40px;
+	background-repeat: no-repeat;
 }
 
-#portfolio .arrow-navigation.left:before {
-	content: "\f01d";	
+#portfolio .arrow-navigation.right:before {
+	content: "";
+}
+
+#portfolio .arrow-navigation.left {
+	background-image: url(../img/arrow.png);
+	background-position: center;
+	background-size: 40px;
+	background-repeat: no-repeat;
 	-moz-transform: scale(-1, 1);
 	-webkit-transform: scale(-1, 1);
 	-o-transform: scale(-1, 1);
 	-ms-transform: scale(-1, 1);
 	transform: scale(-1, 1);
+}
+
+#portfolio .arrow-navigation.left:before {
+	content: "";
 }
 
 @media only screen and (min-width: 57em){ /* 912px */

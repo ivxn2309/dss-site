@@ -15,7 +15,7 @@ new flickerplate({
     selector: '#mainbanner',
     dots: true,
     arrows: false,
-    animation: 'transition-slide'
+    animation: 'transform-slide'
 });
 
 new flickerplate({
