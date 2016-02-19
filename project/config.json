@@ -8,7 +8,7 @@
 	"project": {
 		"component-first": ["jquery"],
 		"component": ["flickerplate","navplate","modalplate","formplate"],
-		"css": ["welcome.min.css","banner.css","dss.css","nav.css","portfolio.css","contacto.css","dsssection.css"],
+		"css": ["welcome.min.css","banner.css","dss.css","nav.css","portfolio.css","contacto.css","dsssection.css","contact-section.css"],
 		"js": ["welcome.min.js","src/script.js","src/maps.js","src/events.js","src/renderer.js"],
 		"ui": "fuse",
 		"form-colour": "aqua",

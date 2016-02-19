@@ -2,6 +2,7 @@ function showView(id_sender, content) {
     activeBreadcrumb(id_sender);
     hideAll();
     $(content).show();
+    resizeMaps();
 }
 
 function activeBreadcrumb(id_elem) {

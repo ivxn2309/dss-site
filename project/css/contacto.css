@@ -34,19 +34,19 @@ Gray:  #9A9798; (154, 151, 152)
 	font-weight: 700;
 }
 
-#contact-info #address {
+#contact-info .address {
 	color: #fff;
 	letter-spacing: 1.1px;
 }
 
-#contact-info #phones {
+#contact-info .phones {
 	color: #fff;
 	font-family: CenturyB;
 	letter-spacing: 1.3px;
 }
 
 #contact-form {
-	padding: 2% 10%;
+	padding: 5% 10%;
 }
 
 #contact-form input {

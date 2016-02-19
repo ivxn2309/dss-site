@@ -1,19 +1,16 @@
-var mainmap;
-var contactmap;
-
-var googleMapStyle1;
-var googleMapStyle2;
+var googleMapStyle;
 var googleMapType;
 var googleMapOptions;
 var googleMapIcon;
 var googleMapMarker;
+var map;
 
-var renderMap = function(center, zoom, element, map, style) {
+var renderMap = function(center, zoom, element) {
 	// if element doesnt exist we need to bail out
 	if($('#' + element).length == 0) return;
 
 	// create a new StyledMapType object, passing it the array of styles, as well as the name to be displayed on the map type control.
-	googleMapType = new google.maps.StyledMapType(style, {name: "DSS"});
+	googleMapType = new google.maps.StyledMapType(googleMapStyle, {name: "Springfield"});
 
 	// create a map object, and include the MapTypeId to add to the map type control.
 	googleMapOptions = {
@@ -26,7 +23,7 @@ var renderMap = function(center, zoom, element, map, style) {
 		disableDoubleClickZoom: true,
 		center: new google.maps.LatLng(center[0],center[1]),
 		mapTypeControlOptions: {
-			mapTypeIds: [google.maps.MapTypeId.SATELLITE, google.maps.MapTypeId.TERRAIN, 'DSS']
+			mapTypeIds: [google.maps.MapTypeId.SATELLITE, google.maps.MapTypeId.TERRAIN, 'Springfield']
 		}
 	};
 	 
@@ -34,12 +31,11 @@ var renderMap = function(center, zoom, element, map, style) {
 	map = new google.maps.Map(document.getElementById(element), googleMapOptions);
 
 	// associate the styled map with the MapTypeId and set it to display.
-	map.mapTypes.set('DSS', googleMapType);
-	map.setMapTypeId('DSS');
-	return map;
+	map.mapTypes.set('Springfield', googleMapType);
+	map.setMapTypeId('Springfield');
 }
 
-var plotMapPoint = function(lat, lng, url, map) {
+var plotMapPoint = function(lat, lng, url) {
 	    googleMapMarker = new google.maps.Marker({
 		url:url,
 		map: map,
@@ -62,11 +58,11 @@ function initMap() {
 	}
 
 	// custom google map styling
-	googleMapStyle1 = [
+	googleMapStyle = [
 	  {
 	    featureType: "all",
 	    stylers: [
-	      { saturation: -50 }
+	      { saturation: -100 }
 	    ]
 	  },{
 	    featureType: "road.arterial",
@@ -83,54 +79,17 @@ function initMap() {
 	  }
 	];
 
-	googleMapStyle2 = [
-	  {
-	    featureType: "all",
-	    stylers: [
-	      { saturation: -100 }, 
-	      { lightness: -35 },
-	      { invert_lightness: false }, 
-	      { gamma: 0.8 }
-	    ]
-	  },{
-	    featureType: "road.arterial",
-	    elementType: "geometry",
-	    stylers: [
-	      { visibility: "off" }
-	    ]
-	  },{
-	    featureType: "poi.business",
-	    elementType: "labels",
-	    stylers: [
-	      { visibility: "off" }
-	    ]
-	  }
-	];
-
-	mainmap = renderMap([20.634039, -103.469000], 15, 'googleMap', mainmap, googleMapStyle1);
-	contactmap = renderMap([20.634039, -103.464467], 15, 'map-contact', contactmap, googleMapStyle2);
+	// render the map
+	if(screen.width > 700)
+		renderMap([20.634039, -103.464467], 15, 'googleMap');
+	else
+		renderMap([20.634039, -103.460786], 15, 'googleMap');
 
 	//Show Marker
-	plotMapPoint(20.627659, -103.449177,"https://www.google.com.mx/maps/place/20%C2%B039'57.2%22N+103%C2%B023'01.0%22W/@20.627807,-103.4493126,17.25z/data=!4m2!3m1!1s0x0:0x0", mainmap);
-	plotMapPoint(20.627659, -103.449177,"https://www.google.com.mx/maps/place/20%C2%B039'57.2%22N+103%C2%B023'01.0%22W/@20.627807,-103.4493126,17.25z/data=!4m2!3m1!1s0x0:0x0", contactmap);
-
-	$( window ).on('resize',function(){
-	    google.maps.event.trigger(mainmap, 'resize');
-	    mainmap.panTo(googleMapMarker.getPosition());
-
-	    google.maps.event.trigger(contactmap, 'resize');
-	    contactmap.panTo(googleMapMarker.getPosition());
-	});
+	plotMapPoint(20.627659, -103.449177,"https://www.google.com.mx/maps/place/20%C2%B039'57.2%22N+103%C2%B023'01.0%22W/@20.627807,-103.4493126,17.25z/data=!4m2!3m1!1s0x0:0x0");
 
 	//This timeout is because the framework does not show correctly the map till resize 
-	setTimeout(resizeMaps, 3000);
-}
-
-function resizeMaps() {
-	google.maps.event.trigger(mainmap, 'resize');
-	google.maps.event.trigger(contactmap, 'resize');
-	contactmap.panTo(googleMapMarker.getPosition());
-	mainmap.panTo(googleMapMarker.getPosition());
+	setTimeout(function(){google.maps.event.trigger(map, 'resize');}, 3000);
 }
 
 /*
