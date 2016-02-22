@@ -43,7 +43,7 @@ var plotMapPoint = function(lat, lng, url, map) {
 	    googleMapMarker = new google.maps.Marker({
 		url:url,
 		map: map,
-		animation: google.maps.Animation.BOUNCE,
+		animation: google.maps.Animation.DROP,
 		position: new google.maps.LatLng(lat,lng),
 		icon: googleMapIcon
 	});

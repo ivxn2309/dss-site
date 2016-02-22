@@ -13,6 +13,7 @@ Gray:  #9A9798; (154, 151, 152)
 	background-color: rgba(5,5,5,0.5);
 	margin-top: -450px;
 	z-index: 1 !important;
+	margin-bottom: 40px; /* 65 to show the google logo in maps */
 }
 
 #googleMap {

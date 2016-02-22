@@ -163,6 +163,17 @@ footer {
     color: #fff;
     padding: 16px 16px 7px 16px;
     text-align: center;
+
+    position: fixed;
+    bottom: 0px;
+    max-width: 100%;
+    width: 100% !important;
+}
+
+/* IE 6 */
+* html footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
 }
 
 footer img {
@@ -245,6 +256,9 @@ footer a:after {
 
     footer {
         text-align: left;
+        position: fixed;
+        bottom: 0px;
+        max-width: 88.3%;
     }
 
     footer img {
