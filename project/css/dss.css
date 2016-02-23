@@ -50,6 +50,22 @@ body {
     user-select: none;
 }
 
+#fixed-top {
+    position: fixed;
+    height: 70px;
+    width: 90%;
+    top: -35px;
+    padding-top: 28px;
+    padding-right: 20px;
+    z-index: 1000;
+
+    background-color: #fff;
+}
+
+#maincontent {
+    margin-top: 69px;
+}
+
 .back-gray {
     background-color: #9a9798;
 }

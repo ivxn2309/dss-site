@@ -21,7 +21,7 @@
 <div id="web-content" style="display:none;"> <!-- Loading -->
 	
 	<!-- ================== Header ================== -->
-    <div class="row not-extended page-top">
+    <div id="fixed-top" class="row not-extended page-top">
         <div class="span-4 span-large-4">
             <img class="logo" src="project/img/welcome/logo.png">
         </div>
