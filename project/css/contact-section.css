@@ -6,7 +6,7 @@
 #contact-section {
 	height: 450px;
 	background-color: #fff;
-	margin-bottom: 65px;
+	margin-bottom: 100px;
 }
 
 #info-contact {
@@ -78,6 +78,10 @@
 }
 
 @media only screen and (min-width: 44em) {
+	#contact-section {
+		margin-bottom: 65px;
+	}
+
 	#contact-section {
 		height: 320px;
 	}

@@ -13,7 +13,7 @@ Gray:  #9A9798; (154, 151, 152)
 	background-color: rgba(5,5,5,0.5);
 	margin-top: -450px;
 	z-index: 1 !important;
-	margin-bottom: 40px; /* 65 to show the google logo in maps */
+	margin-bottom: 100px; 
 }
 
 #googleMap {
@@ -95,6 +95,7 @@ Gray:  #9A9798; (154, 151, 152)
 	#contacto {
 		height: 320px;
 		margin-top: -320px;
+		margin-bottom: 65px; /* 40 to hide the google logo in maps */
 	}
 
 	#googleMap {
