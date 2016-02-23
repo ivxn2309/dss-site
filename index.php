@@ -11,9 +11,14 @@
    <title>DSS</title>
    <link rel="icon" type="image/png" href="project/img/welcome/favicon.png" />
    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+   <script src="project/component/navplate/js/min/navplate.js"></script>
+   <link href="project/component/navplate/css/navplate.css" rel="stylesheet" type="text/css">
+   <script src="project/component/flickerplate/js/min/flickerplate.js"></script>
+   <link href="project/component/flickerplate/css/flickerplate.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div id="webplate-content" style="display:none;"> <!-- Loading -->
+<div class="se-pre-con"></div>
+<div id="web-content" style="display:none;"> <!-- Loading -->
 	
 	<!-- ================== Header ================== -->
     <div class="row not-extended page-top">

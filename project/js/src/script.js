@@ -3,8 +3,12 @@ Author: Ivan Tovar (Webmaster at S+E)
 e-mail: ivxn2309@hotmail.com
   Date: Feb 05, 2016
 */
-$( document ).ready(function(){
 
+$( document ).ready(function(){
+    setTimeout(executeComponents, 1800);
+});
+
+function executeComponents() {
     new navplate({
         selector: '#nav-trigger',
         type: 'slide',
@@ -30,5 +34,11 @@ $( document ).ready(function(){
     new formplate({
         selector: '.formplate'
     });
+}
 
-});
+
+setTimeout(function(){
+    $(".se-pre-con").fadeOut("slow");
+    $("#web-content").css("display","inherit");
+}, 
+2500);

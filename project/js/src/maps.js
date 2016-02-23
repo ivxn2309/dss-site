@@ -123,7 +123,7 @@ function initMap() {
 	});
 
 	//This timeout is because the framework does not show correctly the map till resize 
-	setTimeout(resizeMaps, 3000);
+	setTimeout(resizeMaps, 4000);
 }
 
 function resizeMaps() {
