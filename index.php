@@ -101,3 +101,6 @@
 <script id="webplate" src="start.js"></script>
 </body>
 </html>
+<script type="text/javascript">
+    setTimeout(resizeMaps, 8000);
+</script>

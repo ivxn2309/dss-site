@@ -24,7 +24,7 @@ Gray:  #9A9798; (154, 151, 152)
 }
 
 #contact-info {
-	padding-top: 5%;
+	padding-top: 60px;
 	padding-left: 10%;
 }
 
@@ -47,7 +47,7 @@ Gray:  #9A9798; (154, 151, 152)
 }
 
 #contact-form {
-	padding: 5% 10%;
+	padding: 60px 10%;
 }
 
 #contact-form input {

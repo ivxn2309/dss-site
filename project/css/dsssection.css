@@ -7,7 +7,7 @@
 	color: rgba(255,255,255,0.4);
 	text-align: center;
 	line-height: 550px;
-	font-size: 35vw;
+	font-size: 30vw;
 	padding-top: 1.4%;
 }
 
@@ -67,8 +67,8 @@
 	font-family: CenturyB;
 	font-weight: bold;
 	padding-top: 190px;
-	margin-top: -10%;
-	margin-bottom: -10%;
+	margin-top: -12%;
+	margin-bottom: -15%
 }
 
 #metrics div h1{
@@ -120,8 +120,8 @@
 
 @media only screen and (min-width: 43.87em){ /* 702px */
 	#metrics div {
-		margin-top: 0;
-		margin-bottom: -25%;
+		margin-bottom: 0;
+		margin-top: 0%;
 	}
 
 	#lo-nuestro {
@@ -135,5 +135,19 @@
 	#lo-nuestro div img {
 		width: 85%;
 		float: right;
+	}
+}
+
+@media only screen and (min-width: 120em){ /* 1920px */
+	.main-image-dss h1 {
+		font-size: 580px;
+	}
+
+	#metrics div h1 {
+		font-size: 120px;
+	}
+
+	#metrics div {
+		font-size: 37px;
 	}
 }
