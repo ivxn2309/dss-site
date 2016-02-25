@@ -54,7 +54,7 @@ Gray:  #9A9798; (154, 151, 152)
 	color: #fff !important;
 	background-color: transparent !important;
 	font-family: CenturyB !important;
-	font-size: 0.75rem;
+	font-size: 0.8rem;
 	letter-spacing: 1px;
 	padding: 18px 0px;
 	margin-top: -10px;
@@ -89,6 +89,7 @@ Gray:  #9A9798; (154, 151, 152)
 #contact-form input:placeholder-shown,
 #contact-form input::-webkit-input-placeholder {
 	color: #fff !important;
+	font-family: CenturyB !important;
 }
 
 @media only screen and (min-width: 44em) {

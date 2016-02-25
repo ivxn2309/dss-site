@@ -5,7 +5,7 @@ e-mail: ivxn2309@hotmail.com
 
 DSS Colors
 Green: #94BB4D; (148,187,77)
-Gray:  #9A9798; (154, 151, 152)
+Gray:  #9a9798; (154, 151, 152)
 */
 
 @font-face {
@@ -128,11 +128,18 @@ body {
     color: #fff;
 }
 
+#servicios h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
 #servicios div {
-    padding: 2% 9%;
+    padding: 2% 7%;
     padding-bottom: 10.5%;
     text-align: justify;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     color: #fff;
     text-transform: uppercase;
 }
@@ -175,7 +182,7 @@ body {
 
 footer {
     height: auto;
-    background-color: #999;
+    background-color: #9a9798;
     color: #fff;
     padding: 16px 16px 7px 16px;
     text-align: center;
@@ -261,8 +268,8 @@ footer a:after {
         padding: 3% 25%;
     }
 
-    #somosdss h2 {
-        font-size: 2rem;
+    #somosdss h2, #servicios h2 {
+        font-size: 2.1rem;
         margin-bottom: 4%;
     }
 
