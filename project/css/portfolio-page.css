@@ -1,0 +1,29 @@
+/*
+Author: Ivan Tovar (Webmaster at S+E)
+e-mail: ivxn2309@hotmail.com
+  Date: Feb 05, 2016
+
+DSS Colors
+Green: #94bb4d; (148,187,77)
+Gray:  #9a9798; (154, 151, 152)
+*/
+@media only screen and (min-width: 43.813em){ /* 701px */
+	/* ============================ Main Img ================================= */
+	.block-proj {
+		width: 95%;
+		margin-top: 7%;
+	}
+
+	.block-proj-right {
+		margin-left: 5%;
+	}
+	/* ======================================================================= */
+}
+
+@media only screen and (min-width: 120em){ /* 1920px */
+	/* ============================ Main Img ================================= */
+	.main-image-proj h1 {
+		font-size: 260px;
+	}
+	/* ======================================================================= */
+}

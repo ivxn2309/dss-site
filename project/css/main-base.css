@@ -1,0 +1,267 @@
+/*
+Author: Ivan Tovar (Webmaster at S+E)
+e-mail: ivxn2309@hotmail.com
+  Date: Jan 19, 2016
+
+DSS Colors
+Green: #94bb4d; (148,187,77)
+Gray:  #9a9798; (154, 151, 152)
+*/
+
+/* ============================= Fonts ==================================== */
+@font-face {
+    font-family: FuturaN;
+    src: url(../font/futuran.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: FuturaB;
+    src: url(../font/futurab.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: CenturyN;
+    src: url(../font/centuryn.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: CenturyB;
+    src: url(../font/centuryb.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: MagallanesB;
+    src: url(../font/magallanesb.woff);
+    font-weight: normal;
+}
+/* ======================================================================= */
+/* ============================ Top Page ================================= */
+#fixed-top {
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    top: -3vw;
+    padding-top: 28px;
+    padding-right: 20px;
+    z-index: 1000;
+
+    background-color: #fff;
+}
+
+.navigation {
+    width: 100%;
+    display: none;
+    font-family: CenturyB !important;
+    font-size: 0.5rem;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: right;
+}
+
+.navigation li {
+    display: inline-block;
+
+}
+
+.navigation li a {
+    color: #9a9798;
+    padding: 5px 12.5px 5px 12.5px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-style: solid;
+    border-color: #fff;
+
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+     transition: all 1s ease;
+}
+
+.navigation li a:hover, .navigation li .now {
+    color: #94bb4d;
+    border-top-color: #94bb4d;
+    border-top-width: medium; 
+    border-top-style: solid
+}
+
+.navigation li #search-text {
+    height: 40px;
+    margin-bottom: 0px;
+
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 3px;
+
+    border-color: transparent !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+     transition: all 1s ease;
+}
+
+.navigation li #search-text:focus {
+    border-color: #94bb4d !important;
+    -webkit-box-shadow: inherit !important;
+    -moz-box-shadow: inherit !important;
+    box-shadow: inherit !important;
+}
+
+.navigation #search-area {
+    margin-right: -4%;
+    width: 0px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+     transition: all 1s ease;
+}
+
+#nav-trigger {
+    float: right;
+}
+
+#nav-trigger {
+    color: #94bb4d;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.logo {
+    margin-left: 7%;
+
+}
+/* ======================================================================= */
+/* ============================= Body ==================================== */
+/* Restrict user selection on all site and sets Century Gothic as default font */
+body {
+    font-family: CenturyN;
+    cursor: default !important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#maincontent {
+    margin-top: 69px;
+}
+
+.back-gray {
+    background-color: #9a9798;
+}
+
+.main-image {
+    height: 550px;
+    background-size: cover;
+}
+
+.not-extended {
+    width: auto;
+    margin-top: 0px;
+    margin-right: 0%;
+    margin-bottom: 0px;
+    margin-left: 0%;
+}
+
+.centered {
+    text-align: center;
+}
+
+.page-top {
+	margin-top: 2.5%;
+}
+
+.page-bottom {
+	margin-bottom: 2.5%;
+}
+
+.logo {
+	display: block;
+}
+/* ======================================================================= */
+/* ============================= Footer ================================== */
+footer {
+    height: auto;
+    background-color: #9a9798;
+    color: #fff;
+    padding: 16px 16px 7px 16px;
+    text-align: center;
+
+    position: fixed;
+    bottom: 0px;
+    max-width: 100%;
+    width: 100% !important;
+    z-index: 1000 !important;
+}
+
+/* IE 6 */
+* html footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+
+footer img {
+    height: 25px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #999;
+    float: none;
+    margin: 0 auto; 
+    display: inline-block;
+
+    background-color: #fff;
+    border-radius: 36px;
+
+    width: 35px;
+    height: 35px;
+    padding-top: 10px;
+
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+     transition: all 2s ease;
+}
+
+footer a:hover {
+    text-decoration: none;
+    background-color: #555;
+    color: #fff;
+}
+
+footer a:after {
+    content: none;
+}
+/* ======================================================================= */
+/* ============================= Loader ================================== */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../img/loader.gif) center no-repeat #fff;
+}
+/* ======================================================================= */

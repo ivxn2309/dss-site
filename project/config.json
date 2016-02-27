@@ -8,8 +8,8 @@
 	"project": {
 		"component-first": ["jquery","hammerjs","flickerplate","navplate"],
 		"component": ["modalplate","formplate"],
-		"css": ["welcome.min.css","banner.css","dss.css","nav.css","portfolio.css","contacto.css","dsssection.css","contact-section.css"],
-		"js": ["welcome.min.js","src/script.js","src/maps.js","src/events.js","src/renderer.js"],
+		"css": ["main-base.css","main-page.css","home-base.css","home-page.css","info-base.css","info-page.css","contact-base.css","contact-page.css","portfolio-base.css","portfolio-page.css"],
+		"js": ["src/script.js","src/maps.js","src/events.js","src/renderer.js"],
 		"ui": "fuse",
 		"form-colour": "aqua",
 		"icon-font": "font-awesome"

@@ -1,0 +1,341 @@
+/*
+Author: Ivan Tovar (Webmaster at S+E)
+e-mail: ivxn2309@hotmail.com
+  Date: Jan 19, 2016
+
+DSS Colors
+Green: #94bb4d; (148,187,77)
+Gray:  #9a9798; (154, 151, 152)
+*/
+
+/* ======================== Main Slideshot =============================== */
+.flickerplate {
+	width: auto !important;
+}
+
+.flickerplate .arrow-navigation {
+    font-family: FontAwesome !important;
+}
+
+#mainbanner {
+	height: 650px;
+	margin-right: 0%;
+}
+
+#mainbanner .flick-content {
+	max-width: 100%;
+	margin-right: 1%;
+	margin-left: 1%;
+}
+
+#mainbanner .flick-title {
+	font-family: FuturaB;
+	font-weight: 800;
+	color: #fff;
+	opacity: 0.8;
+	margin-bottom: 7.5vw !important;
+}
+
+#mainbanner .flick-sub-text {
+	font-family: FuturaB;
+	font-weight: 100;
+	color: #fff;
+	opacity: 0.8;
+}
+
+#mainbanner ul.flicks {
+	width: 10100% !important;
+}
+
+#mainbanner ul.flicks>li .flick-inner {
+	height: 650px;
+	padding: 10px;
+	color: #fff;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+#mainbanner ul.flicks>li .flick-title{
+	padding: 0px;
+	letter-spacing: 3vw;
+	padding-left: 10px;
+	text-align: center;
+	font-size: 6vw;
+}
+
+#mainbanner ul.flicks>li .flick-sub-text{
+	padding: 0px;
+	text-align: center;
+	font-size: 13vw;
+}
+/* ======================================================================= */
+/* =========================== Somos DSS ================================= */
+#somosdss {
+    padding: 3% 15%;
+    text-align: justify;
+    background-color: #9a9798;
+}
+
+#somosdss h2, #servicios h2 {
+    padding-top: 3%;
+    font-size: 1.1rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: CenturyB;
+}
+
+#somosdss p {
+    font-size: 0.6rem;
+    color: #fff;
+}
+/* ======================================================================= */
+/* =========================== Servicios ================================= */
+#servicios {
+    background-image: url(../img/back-services.png);
+    background-size: cover;
+}
+
+#servicios h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#servicios div {
+    padding: 2% 7%;
+    padding-bottom: 10.5%;
+    text-align: justify;
+    font-size: 0.7rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#servicios img {
+    margin: 0 auto;
+    display: block;
+    width: 70px;
+}
+/* ======================================================================= */
+/* ============================ Clientes ================================= */
+#clientes h2 {
+    margin: auto;
+    padding: 0.7%;
+    font-size: 1.2rem;
+    color: #9a9798;
+    text-align: center;
+    font-family: CenturyB;
+}
+
+#clientes .client-logo {
+    background-color: #9a9798;
+    color: #555253;
+    text-align: center;
+    padding: 10% 0%;
+}
+
+#clientes .client-logo1 {
+    color: #9a9798;
+    background-color: #555253;
+    text-align: center;
+    padding: 10% 0%;
+    font-weight: bold;
+}
+/* ======================================================================= */
+/* ============================= Video =================================== */
+#video-container {
+    background-color: #000;
+    height: auto;
+    text-align: center;
+}
+/* ======================================================================= */
+/* =========================== Portfolio ================================= */
+#portfolio {
+	background-image: url(../img/portfolio/back.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%
+}
+
+#portfolio h3 {
+	text-align: center;
+    font-family: CenturyB;
+    color: #fff;
+    font-size: 1.0rem;
+}
+
+#portfolio .proj {    
+    display: inline-block;
+    max-height: 300px;
+    width: 70%;
+
+    cursor: pointer;
+}
+
+#portfolio .proj .zoomer {
+	width: 100%;
+	height: 300px;
+	float: right;
+	text-align: center;
+
+	background-color: rgba(0,0,0,0.75);
+	opacity: 0;
+	-webkit-transition: all 0.7s ease;
+	 transition: all 0.7s ease;
+}
+
+#portfolio .proj .zoomer:hover {    
+	opacity: 1;
+}
+
+#portfolio .proj .zoomer a {
+	color: rgba(255,255,255,0.4);
+	line-height: 300px;
+}
+
+#portfolio .proj .label {
+	width: 100%;
+	background-color: #fff;
+	color: #94bb4d;
+	height: auto;
+	text-align: center;
+	font-family: CenturyB;
+	font-style: italic;
+	font-size: 0.5em;
+	float: right;
+	margin-top: 0%;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+#portfolio .firstp {
+	margin-left: 14.5%;
+	margin-right: 7.5%;
+	margin-bottom: 5%;
+}
+
+#portfolio .secondp {
+	margin-left: 14.5%;
+	margin-right: 7.5%;
+	margin-bottom: 5%;
+}
+
+#portfolio .arrow-navigation:before {
+	opacity: 0.9;
+	font-size: 2rem !important;
+}
+
+#portfolio .arrow-navigation.right {
+	background-image: url(../img/arrow.png);
+	background-position: center;
+	background-size: 40px;
+	background-repeat: no-repeat;
+}
+
+#portfolio .arrow-navigation.right:before {
+	content: "";
+}
+
+#portfolio .arrow-navigation.left {
+	background-image: url(../img/arrow.png);
+	background-position: center;
+	background-size: 40px;
+	background-repeat: no-repeat;
+	-moz-transform: scale(-1, 1);
+	-webkit-transform: scale(-1, 1);
+	-o-transform: scale(-1, 1);
+	-ms-transform: scale(-1, 1);
+	transform: scale(-1, 1);
+}
+
+#portfolio .arrow-navigation.left:before {
+	content: "";
+}
+/* ======================================================================= */
+/* ============================ Contact ================================== */
+#contacto {
+	height: 450px;
+	background-color: rgba(5,5,5,0.5);
+	margin-top: -450px;
+	z-index: 1 !important;
+	margin-bottom: 100px; 
+}
+
+#googleMap {
+	z-index: -1 !important;
+	position: relative !important;
+	width: 100%;
+	height: 450px;
+}
+
+#contact-info {
+	padding-top: 60px;
+	padding-left: 10%;
+}
+
+#contact-info h2 {
+	color: #fff;
+	font-size: 1.8rem;
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+
+#contact-info .address {
+	color: #fff;
+	letter-spacing: 1.1px;
+}
+
+#contact-info .phones {
+	color: #fff;
+	font-family: CenturyB;
+	letter-spacing: 1.3px;
+}
+
+#contact-form {
+	padding: 60px 10%;
+}
+
+#contact-form input {
+	color: #fff !important;
+	background-color: transparent !important;
+	font-family: CenturyB !important;
+	font-size: 0.8rem;
+	letter-spacing: 1px;
+	padding: 18px 0px;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	
+	border-color: transparent !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+
+	border-bottom-color: #ddd !important;
+
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+     transition: all 1s ease;
+}
+
+#contact-form input:focus {
+	border-color: transparent !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+
+	border-bottom-color: #fff !important;
+	background-color: rgba(0,0,0,0.7) !important;
+}
+
+#contact-form input:-moz-placeholder,
+#contact-form input::-moz-placeholder,
+#contact-form input:-ms-input-placeholder,
+#contact-form input:placeholder-shown,
+#contact-form input::-webkit-input-placeholder {
+	color: #fff !important;
+	font-family: CenturyB !important;
+}
+/* ======================================================================= */
+

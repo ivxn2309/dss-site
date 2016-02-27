@@ -1,0 +1,89 @@
+/*
+Author: Ivan Tovar (Webmaster at S+E)
+e-mail: ivxn2309@hotmail.com
+  Date: Feb 05, 2016
+
+DSS Colors
+Green: #94bb4d; (148,187,77)
+Gray:  #9a9798; (154, 151, 152)
+*/
+
+/* ======================================================================= */
+/* Frontpage of projects in portfolio 770x720 in home page */
+#proj1 {
+	background-image: url(../img/portfolio/1.png);
+	background-size: cover;
+}
+
+#proj2 {
+	background-image: url(../img/portfolio/2.png);
+	background-size: cover;
+}
+
+#proj3 {
+	background-image: url(../img/portfolio/3.png);
+	background-size: cover;
+}
+
+#proj4 {
+	background-image: url(../img/portfolio/4.png);
+	background-size: cover;
+}
+/* ======================================================================= */
+/* ============================ Main Img ================================= */
+.main-image-proj {
+    background-image: url(../img/portfolio/back-portfolio.png);
+}
+
+.main-image-proj h1 {
+	font-family: CenturyB;
+	color: rgba(255,255,255,0.4);
+	text-align: center;
+	line-height: 550px;
+	font-size: 14vw;
+	padding-top: 1.4%;
+}
+/* ======================================================================= */
+/* ============================ Main Img ================================= */
+.block-proj {
+	width: 100%;
+	margin-top: 5%;
+}
+
+.block-proj-right {
+	margin-left: 0%;
+}
+
+.block-proj img {
+	width: 100%;
+}
+
+.block-proj .zoomer {
+	width: 100%;
+	height: 498px;
+	float: right;
+	text-align: center;
+	margin-top: -504px;
+
+	background-color: rgba(0,0,0,0.75);
+	opacity: 0;
+	-webkit-transition: all 0.7s ease;
+	 transition: all 0.7s ease;
+}
+
+.block-proj .zoomer:hover {
+	opacity: 1;
+}
+
+.block-proj .zoomer a {
+	color: rgba(255,255,255,0.4);
+	line-height: 497px;
+}
+
+.block-proj .description {
+	color: #9a9798;
+	text-align: justify;
+	text-transform: uppercase;
+	font-family: CenturyB;
+}
+/* ======================================================================= */

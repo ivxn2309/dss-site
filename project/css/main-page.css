@@ -1,0 +1,110 @@
+/*
+Author: Ivan Tovar (Webmaster at S+E)
+e-mail: ivxn2309@hotmail.com
+  Date: Jan 19, 2016
+
+DSS Colors
+Green: #94bb4d; (148,187,77)
+Gray:  #9a9798; (154, 151, 152)
+*/
+
+@media only screen and (min-width: 30em){ /* 480px */
+    #mainbanner {
+        margin-right: 0%;
+    }
+
+    #somosdss {
+        padding: 3% 25%;
+    }
+
+    #somosdss h2, #servicios h2 {
+        font-size: 2.1rem;
+        margin-bottom: 4%;
+    }
+
+    #somosdss p {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (min-width: 35em){ /* 560px */
+    /* ============================= Body ==================================== */
+    .not-extended {
+        margin-right: 5.85%;
+        margin-left: 5.85%;
+    }
+    /* ======================================================================= */
+    /* ============================ Top Page ================================= */
+    #fixed-top {
+        width: 90%;
+    }
+
+    #nav-trigger {
+        margin-right: 0%;
+        margin-bottom: 0%;
+    }
+
+    .logo {
+        margin-left: 0%;
+    }
+    /* ======================================================================= */
+    /* ============================= Footer ================================== */
+    #social-icons {
+        text-align: center;
+    }
+
+    footer {
+        text-align: left;
+        position: fixed;
+        bottom: 0px;
+        max-width: 88.3%;
+    }
+
+    footer img {
+        height: 35px;
+        margin: auto 0;
+        margin-bottom: 0px;
+    }
+
+    footer a {
+        float: right;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    /* ======================================================================= */
+}
+
+@media only screen and (min-width: 59em) { /* 720px */
+    /* ============================ Top Page ================================= */
+    .navigation {
+        display: inline-block;
+        font-size: 0.8rem;
+    }
+
+    .logo {
+        padding: 3px 0px;
+        margin: auto 0;
+    }
+
+    #nav-trigger {
+        display: none;
+    }
+
+    .navigation #search-area {
+        margin-right: -3%;
+    }
+    /* ======================================================================= */
+}
+
+@media only screen and (min-width: 62em) { /* 992 */
+    /* ============================ Top Page ================================= */
+    .navigation {
+        display: inline-block;
+        font-size: 0.9rem;
+    }
+
+    .navigation #search-area {
+        margin-right: -0.5%;
+    }
+    /* ======================================================================= */
+}
