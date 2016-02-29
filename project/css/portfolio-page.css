@@ -7,6 +7,24 @@ DSS Colors
 Green: #94bb4d; (148,187,77)
 Gray:  #9a9798; (154, 151, 152)
 */
+
+@media only screen and (min-width: 35em){ /* 560px */
+	/* ============================ Projects ================================= */
+	.block-proj .zoomer {
+		height: 80.3vw;
+		margin-top: -81.5vw;
+	}
+
+	.block-proj .zoomer a {
+		line-height: 80.3vw;
+	}
+
+	.block-proj .description {
+		padding: 0;
+	}
+	/* ======================================================================= */
+}
+
 @media only screen and (min-width: 43.813em){ /* 701px */
 	/* ============================ Main Img ================================= */
 	.block-proj {
@@ -16,6 +34,16 @@ Gray:  #9a9798; (154, 151, 152)
 
 	.block-proj-right {
 		margin-left: 5%;
+	}
+	/* ======================================================================= */
+	/* ============================ Projects ================================= */
+	.block-proj .zoomer {
+		height: 39vw;
+		margin-top: -39.2vw;
+	}
+
+	.block-proj .zoomer a {
+		line-height: 39vw;
 	}
 	/* ======================================================================= */
 }
