@@ -4,17 +4,83 @@
 <!-- e-mail: ivxn2309@hotmail.com -->
 <!--   Date: Jan 19, 2016 -->
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-   <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-   <title>DSS</title>
-   <link rel="icon" type="image/png" href="project/img/welcome/favicon.png" />
-   <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-   <script src="project/component/navplate/js/min/navplate.js"></script>
-   <link href="project/component/navplate/css/navplate.css" rel="stylesheet" type="text/css">
-   <script src="project/component/flickerplate/js/min/flickerplate.js"></script>
-   <link href="project/component/flickerplate/css/flickerplate.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>DSS</title>
+    <link rel="icon" type="image/png" href="project/img/welcome/favicon.png" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="project/js/jquery.min.js"></script>
+    <script type="text/javascript" src="project/js/jquery.mobile.customized.min.js"></script>
+    <script type="text/javascript" src="project/js/jquery.easing.1.3.js"></script>
+
+    <!-- Navplate -->
+    <script src="project/component/navplate/js/min/navplate.js"></script>
+    <link href="project/component/navplate/css/navplate.css" rel="stylesheet" type="text/css">
+
+    <!-- Flickerplate -->
+    <script src="project/component/flickerplate/js/min/flickerplate.js"></script>
+    <link href="project/component/flickerplate/css/flickerplate.css" rel="stylesheet" type="text/css">
+
+    <!-- Formplate -->
+    <script src="project/component/formplate/js/min/formplate.js"></script>
+    <link href="project/component/formplate/css/formplate.css" rel="stylesheet" type="text/css">
+
+    <!-- Modalplate -->
+    <script src="project/component/modalplate/js/min/modalplate.js"></script>
+    <link href="project/component/modalplate/css/modalplate.css" rel="stylesheet" type="text/css">
+
+    <!-- Buttonplate -->
+    <script src="project/component/buttonplate/js/min/buttonplate.js"></script>
+    <link href="project/component/buttonplate/css/buttonplate.css" rel="stylesheet" type="text/css">
+
+    <!-- Hammer -->
+    <script src="project/component/hammerjs/hammer.js"></script>
+
+    <!-- DSS Scripts -->
+    <script src="project/js/src/maps.js"></script>
+    <script src="project/js/src/events.js"></script>
+    <script src="project/js/src/script.js"></script>    
+
+    <!-- DSS Stylesheets -->
+    <link href="project/css/main-base.css" rel="stylesheet" type="text/css">
+    <link href="project/css/main-page.css" rel="stylesheet" type="text/css">
+
+    <link href="project/css/home-base.css" rel="stylesheet" type="text/css">
+    <link href="project/css/home-page.css" rel="stylesheet" type="text/css">
+
+    <link href="project/css/info-base.css" rel="stylesheet" type="text/css">
+    <link href="project/css/info-page.css" rel="stylesheet" type="text/css">
+
+    <link href="project/css/contact-base.css" rel="stylesheet" type="text/css">
+    <link href="project/css/contact-page.css" rel="stylesheet" type="text/css">
+
+    <link href="project/css/portfolio-base.css" rel="stylesheet" type="text/css">
+    <link href="project/css/portfolio-page.css" rel="stylesheet" type="text/css">
+
+    <!-- Camera for projects -->
+    <script type="text/javascript" src="project/js/camera.min.js"></script>
+    <link href="project/css/camera.css" rel="stylesheet" type="text/css">
+    <link href="project/css/gallery.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript">
+    /*
+    jQuery(function(){
+        jQuery('#slider-p1').camera({
+            fx: 'simpleFade',
+            playPause: false,
+            height: '500px',
+            autoAdvance: false,
+            pagination: false,
+            thumbnails: true
+        });
+    });
+*/
+    </script>
+
 </head>
 <body>
 <div class="se-pre-con"></div>
@@ -34,7 +100,6 @@
                     <li><a id="home-button" class="now" href="javascript:showView('home-button', '#home')">INICIO</a></li>
                     <li><a id="dss-button" href="javascript:showView('dss-button', '#dss')">DSS</a></li>
                     <li><a id="projects-button" href="javascript:showView('projects-button', '#projects')">PROYECTOS</a></li>
-                    <li><a id="contact-button" href="javascript:showView('contact-button', '#contact')">CONTACTO</a></li>
                     <li id="search-area">
                         <input id="search-text" type="text" placeholder="Búsqueda..." onblur="javascript:hideSearchBox()">
                     </li>
@@ -49,22 +114,22 @@
 
     <!-- ***************************** Main Content ***************************** -->
     <div id="maincontent">
+        <!-- Load main content pages -->
         <div id="home"><?php include "views/home.html" ?></div>
         <div id="dss"><?php include "views/dss.html" ?></div>
         <div id="projects"><?php include "views/projects.html" ?></div>
         <div id="contact"><?php include "views/contact.html" ?></div>
+        <!-- Load the projects -->
+        <div id="project1-info"><?php include "views/projects/project1.html" ?></div>
+        <div id="project2-info"><?php include "views/projects/project2.html" ?></div>
+        <div id="project3-info"><?php include "views/projects/project3.html" ?></div>
+        <div id="project4-info"><?php include "views/projects/project4.html" ?></div>
     </div>
     <!-- ************************** End of Main Content ************************* -->
 
     <!-- ================== Footer ================== -->
     <footer class="row not-extended">
-        <div class="span-12 span-large-5"><img src="project/img/footer-image.png"></div>
-        <div id="social-icons" class="span-12 span-large-7">
-            <a class="fa fa-linkedin" href="#"></a>
-            <a class="fa fa-twitter" href="#"></a>
-            <a class="fa fa-youtube" href="#"></a>
-            <a class="fa fa-facebook" href="#"></a>
-        </div>
+        <div class="span-12 span-large-12"><img src="project/img/footer-image.png"></div>
     </footer>
     <!-- ================== End of Footer ================== -->
 
@@ -80,10 +145,8 @@
     <!-- ================== End of Mobile Menu ================== -->
 
     <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYA3pM4DiDiDsTK02z77FdsdEY_NBpK20&callback=initMap" type="text/javascript"></script>-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="project/js/src/maps.js"></script>
+    <script src="project/js/src/maps.js" type="text/javascript"></script>
     <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" type="text/javascript"></script>
-    
 
 <!-- This scripts are used to manage the asynchronous load -->
 <!--
@@ -92,15 +155,15 @@
 <script type="text/javascript" src="project/js/app.js"></script>
 <script type="text/javascript" src="project/js/src/renderer.js"></script>
 -->
-
-<!-- ============================================================= -->
-
 </div><!-- End Loading -->
 
 <!-- Webplate -->
 <script id="webplate" src="start.js"></script>
 </body>
 </html>
+<!-- ============================================================= -->
+<!-- <script src="project/js/src/renderer.js"></script> -->
+<!-- ============================================================= -->
 <script type="text/javascript">
     setTimeout(resizeMaps, 8000);
 </script>

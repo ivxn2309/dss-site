@@ -32,7 +32,7 @@ Gray:  #9a9798; (154, 151, 152)
 	font-family: FuturaB;
 	font-weight: 800;
 	color: #fff;
-	opacity: 0.8;
+	opacity: 0.7;
 	margin-bottom: 7.5vw !important;
 }
 
@@ -40,7 +40,7 @@ Gray:  #9a9798; (154, 151, 152)
 	font-family: FuturaB;
 	font-weight: 100;
 	color: #fff;
-	opacity: 0.8;
+	opacity: 0.7;
 }
 
 #mainbanner ul.flicks {
@@ -86,7 +86,7 @@ Gray:  #9a9798; (154, 151, 152)
 }
 
 #somosdss p {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     color: #fff;
 }
 /* ======================================================================= */
@@ -98,18 +98,22 @@ Gray:  #9a9798; (154, 151, 152)
 
 #servicios h3 {
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
+    line-height: 1.7rem;
     font-weight: bold;
     text-align: center;
 }
 
 #servicios div {
-    padding: 2% 7%;
-    padding-bottom: 10.5%;
+    padding: 2% 4%;
     text-align: justify;
     font-size: 0.7rem;
     color: #fff;
     text-transform: uppercase;
+}
+
+#servicios .three-col div {
+	padding: 2% 8%;
 }
 
 #servicios img {

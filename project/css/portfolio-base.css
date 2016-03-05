@@ -29,6 +29,36 @@ Gray:  #9a9798; (154, 151, 152)
 	background-image: url(../img/portfolio/4.png);
 	background-size: cover;
 }
+
+#proj5 {
+	background-image: url(../img/portfolio/5.png);
+	background-size: cover;
+}
+
+#proj6 {
+	background-image: url(../img/portfolio/6.png);
+	background-size: cover;
+}
+
+#proj7 {
+	background-image: url(../img/portfolio/7.png);
+	background-size: cover;
+}
+
+#proj8 {
+	background-image: url(../img/portfolio/8.png);
+	background-size: cover;
+}
+
+#proj9 {
+	background-image: url(../img/portfolio/9.png);
+	background-size: cover;
+}
+
+#proj10 {
+	background-image: url(../img/portfolio/10.png);
+	background-size: cover;
+}
 /* ======================================================================= */
 /* ============================ Content ================================== */
 #portfolio-content {

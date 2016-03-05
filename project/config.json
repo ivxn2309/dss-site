@@ -1,15 +1,15 @@
 {
 	"build": [{
 		"name": "DSS",
-		"component": ["buttonplate","flickerplate","navplate"],
+		"component": [],
 		"sass": ["welcome.scss"],
 		"js": ["src/welcome.js"]
 	}],
 	"project": {
-		"component-first": ["jquery","hammerjs","flickerplate","navplate"],
-		"component": ["modalplate","formplate"],
-		"css": ["main-base.css","main-page.css","home-base.css","home-page.css","info-base.css","info-page.css","contact-base.css","contact-page.css","portfolio-base.css","portfolio-page.css"],
-		"js": ["src/script.js","src/maps.js","src/events.js","src/renderer.js"],
+		"component-first": [],
+		"component": [],
+		"css": [],
+		"js": ["src/renderer.js"],
 		"ui": "fuse",
 		"form-colour": "aqua",
 		"icon-font": "font-awesome"

@@ -8,25 +8,6 @@ Green: #94bb4d; (148,187,77)
 Gray:  #9a9798; (154, 151, 152)
 */
 
-@media only screen and (min-width: 30em){ /* 480px */
-    #mainbanner {
-        margin-right: 0%;
-    }
-
-    #somosdss {
-        padding: 3% 25%;
-    }
-
-    #somosdss h2, #servicios h2 {
-        font-size: 2.1rem;
-        margin-bottom: 4%;
-    }
-
-    #somosdss p {
-        font-size: 0.8rem;
-    }
-}
-
 @media only screen and (min-width: 35em){ /* 560px */
     /* ============================= Body ==================================== */
     .not-extended {
@@ -54,7 +35,7 @@ Gray:  #9a9798; (154, 151, 152)
     }
 
     footer {
-        text-align: left;
+        text-align: center;
         position: fixed;
         bottom: 0px;
         max-width: 88.3%;

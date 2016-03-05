@@ -1,0 +1,29 @@
+.slider {
+	width: 88.3% !important;
+}
+
+.camera_thumbs_cont ul li > img {
+	border: none !important;
+}
+
+.slider a {
+	color: #09f;
+}
+
+.slider a:hover {
+	text-decoration: none;
+}
+
+#back_to_camera {
+	clear: both;
+	display: block;
+	height: 80px;
+	line-height: 40px;
+	padding: 20px;
+}
+
+.fluid_container {
+	margin: 0 auto;
+	max-width: 1000px;
+	width: 90%;
+}
