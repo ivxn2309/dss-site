@@ -8,66 +8,119 @@ Green: #94bb4d; (148,187,77)
 Gray:  #9a9798; (154, 151, 152)
 */
 
+/* ============================ Main Image =============================== */
 .main-image-dss {
     background-image: url(../img/dss/back-dss.png);
 }
 
 .main-image-dss h1 {
 	font-family: MagallanesB;
-	color: rgba(255,255,255,0.4);
+	color: rgba(255,255,255,0.6);
 	text-align: center;
 	line-height: 550px;
 	font-size: 30vw;
 	padding-top: 1.4%;
 }
-
-#especialidad {
-	padding: 1% 3%;
+/* ======================================================================= */
+/* =========================== Lo nuestro ================================ */
+#lo-nuestro {
+	background-color: #fff;
+	font-family: CenturyB;
+	margin-bottom: 0px;
 }
 
-#especialidad h2 {
-	padding-top: 1%; 
-	font-size: 1.5rem;
-    color: #fff;
+#lo-nuestro h3 {
+	text-align: center;
+	font-size: 1.2rem;
+	color: #9a9798;
+	padding-top: 20px;
+}
+
+#lo-nuestro div p, #lo-nuestro ul {
+	text-align: justify;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-size: 0.85rem;
+	color: #9a9798;
+}
+
+#lo-nuestro ul {
+	list-style: none;
+}
+
+#lo-nuestro ul li:before {
+	font-family: FontAwesome;
+	color: #9a9798;
+	content: "\f00c";
+	font-size: 1.3rem;
+	padding-right: 10px;
+}
+
+#lo-nuestro ul li {
+	color: #9a9798;
+	font-size: 0.85rem;
+}
+
+#lo-nuestro div img {
+	width: 100%;
+	float: none;
+}
+/* ======================================================================= */
+/* =========================== Servicios ================================= */
+#servicios {
+	background-color: #fff;
+    background-size: cover;
+}
+
+#servicios h2 {
+	color: #9a9798;
+	font-size: 1.2rem;
+	padding-top: 3%;
     text-align: center;
     margin-bottom: 5%;
     font-family: CenturyB;
 }
 
-#especialidad div {
-	text-align: justify;
-	color: white;
-	font-size: 0.8rem;
-	line-height: 2rem;
-	padding-left: 1%;
+#servicios h3 {
+    color: #9a9798;
+    font-size: 1.0rem;
+    line-height: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-#especialidad .row {
-	margin-bottom: 5%;
+#servicios div {
+    padding: 2% 4%;
+    text-align: justify;
+    font-size: 0.7rem;
+    color: #9a9798;
 }
 
-#especialidad .div-left {
-	padding-right: 5%;
+#servicios .col {
+	width: 100% !important;
 }
 
-#especialidad .div-right {
-	padding-right: 3%;
+#servicios .col2 {
+	width: 100% !important;
 }
 
-#especialidad .icon {
-	text-align: center;
-	padding-right: 1%;
+#servicios .three-col div {
+	padding: 2% 8%;
 }
 
-#especialidad .icon img {
-	width: 50px;
+#servicios img {
+    margin: 0 auto;
+    display: block;
+    width: 70px;
 }
-
+/* ======================================================================= */
+/* ============================= Metrics ================================= */
 #metrics {
 	background-image: url(../img/dss/metrics.png);
 	background-size: cover;
+	background-attachment: fixed;
 	height: 500px;
-	margin-bottom: 4%;
 }
 
 #metrics div {
@@ -86,45 +139,4 @@ Gray:  #9a9798; (154, 151, 152)
 	color: #fff;
 	margin-bottom: 3%;
 }
-
-#lo-nuestro {
-	background-color: #fff;
-	font-family: CenturyB;
-	margin-bottom: 94px;
-}
-
-#lo-nuestro h3 {
-	text-align: center;
-	font-size: 2vw;
-	color: #999;
-}
-
-#lo-nuestro div p {
-	text-align: justify;
-	padding-right: 0%;
-	font-size: 0.85rem;
-	color: #999;
-}
-
-#lo-nuestro ul {
-	list-style: none;
-}
-
-#lo-nuestro ul li:before {
-	font-family: FontAwesome;
-	color: #000;
-	content: "\f00c";
-	font-size: 1.3rem;
-	padding-right: 10px;
-}
-
-#lo-nuestro ul li {
-	color: #999;
-	font-size: 0.85rem;
-}
-
-#lo-nuestro div img {
-	width: 100%;
-	float: none;
-}
-
+/* ======================================================================= */

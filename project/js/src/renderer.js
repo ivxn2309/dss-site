@@ -1,14 +1,26 @@
-function showView(id_sender, content, slider) {
+function showView(id_sender, content, slider, mobile) {
     if( id_sender )
         activeBreadcrumb(id_sender);
     else
         activeBreadcrumb("projects-button");
 
-    hideAll();
-    $(content).show();
+    hideAll(slider);
+    
 
-    if(slider)
+    if(slider) {
+        $(content).show();
         showProjectSlider(slider);
+        work_preview = true;
+    }
+    else {
+        showAll();
+        work_preview = false;
+    }
+
+    if(mobile) {
+        scrollToAnchor(content);
+    }
+
     resizeMaps();
 }
 
@@ -30,17 +42,27 @@ function resetBreadcrumb() {
         web.classRemove(contactbutton, "now");
 }
 
-function hideAll() {
-    $("#home").hide();
-    $("#dss").hide();
-    $("#projects").hide();
-    $("#contact").hide();
+function showAll() {
+    $("#home").show();
+    $("#dss").show();
+    $("#projects").show();
+    $("#contact").show();
+}
+
+function hideAll(all) {
+    if(all) {
+        $("#home").hide();
+        $("#dss").hide();
+        $("#projects").hide();
+        $("#contact").hide();
+    }
     
     $("#project1-info").hide();
     $("#project2-info").hide();
     $("#project3-info").hide();
     $("#project4-info").hide();
 }
+
 var sliders = {};
 function showProjectSlider(id_jq_obj) {
     //Si no esta iniciado el slider
@@ -61,4 +83,11 @@ function showProjectSlider(id_jq_obj) {
     }
 }
 
+function scrollToAnchor(anchor){
+    $(document.body).animate({
+        'scrollTop': $(anchor).offset().top
+    }, 2000);
+}
+
 showView('home-button', '#home');
+

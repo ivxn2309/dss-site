@@ -1,0 +1,17 @@
+/*
+Author: Ivan Tovar (Webmaster at S+E)
+e-mail: ivxn2309@hotmail.com
+  Date: Mar 10, 2016
+
+DSS Colors
+Green: #94bb4d; (148,187,77)
+Gray:  #9a9798; (154, 151, 152)
+*/
+
+@media only screen and (min-width: 35em){ /* 560px */
+	/* =========================== Main Slider =============================== */
+	.slider {
+		width: 88.3% !important;
+	}
+	/* ======================================================================= */
+}

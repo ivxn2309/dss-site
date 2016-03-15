@@ -203,10 +203,19 @@ footer {
     text-align: center;
 
     position: fixed;
-    bottom: 0px;
+    bottom: -90px;
     max-width: 100%;
     width: 100% !important;
     z-index: 1000 !important;
+
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+     transition: all 1s ease-out;
+}
+
+.bottom-zero {
+    bottom: 0px;
 }
 
 /* IE 6 */
@@ -216,7 +225,7 @@ footer {
 }
 
 footer img {
-    height: 25px;
+    height: 23px;
     display: inline-block;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -263,5 +272,6 @@ footer a:after {
     height: 100%;
     z-index: 9999;
     background: url(../img/loader.gif) center no-repeat #fff;
+    background-size: 100%;
 }
 /* ======================================================================= */

@@ -1,0 +1,60 @@
+/*
+Author: Ivan Tovar (Webmaster at S+E)
+e-mail: ivxn2309@hotmail.com
+  Date: Mar 10, 2016
+
+DSS Colors
+Green: #94bb4d; (148,187,77)
+Gray:  #9a9798; (154, 151, 152)
+*/
+
+/* =========================== Main Slider =============================== */
+.slider {
+	width: 100% !important;
+}
+
+.camera_thumbs_cont ul li > img {
+	border: none !important;
+}
+
+.slider a {
+	color: #09f;
+}
+
+.slider a:hover {
+	text-decoration: none;
+}
+
+#back_to_camera {
+	clear: both;
+	display: block;
+	height: 80px;
+	line-height: 40px;
+	padding: 20px;
+}
+
+.fluid_container {
+	margin: 0 auto;
+	max-width: 1000px;
+	width: 90%;
+}
+/* ======================================================================= */
+/* =========================== Description =============================== */
+.project-information .title-project {
+	width: 100%;
+	color: #fff;
+	background-color: #9a9798;
+	font-family: CenturyB;
+	padding: 10px;
+}
+
+.project-information .description {
+	margin-bottom: 100px;
+}
+
+.project-information .description p {
+	color: #9a9798;
+	font-family: CenturyB;
+	padding: 10px;
+	text-align: justify;
+}

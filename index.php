@@ -41,30 +41,30 @@
     <script src="project/component/hammerjs/hammer.js"></script>
 
     <!-- DSS Scripts -->
-    <script src="project/js/src/maps.js"></script>
-    <script src="project/js/src/events.js"></script>
-    <script src="project/js/src/script.js"></script>    
+    <script src="project/js/src/events.js?141020161625"></script>
+    <script src="project/js/src/script.js?141020161625"></script>    
 
     <!-- DSS Stylesheets -->
-    <link href="project/css/main-base.css" rel="stylesheet" type="text/css">
-    <link href="project/css/main-page.css" rel="stylesheet" type="text/css">
+    <link href="project/css/main-base.css?141020161625" rel="stylesheet" type="text/css">
+    <link href="project/css/main-page.css?141020161625" rel="stylesheet" type="text/css">
 
-    <link href="project/css/home-base.css" rel="stylesheet" type="text/css">
-    <link href="project/css/home-page.css" rel="stylesheet" type="text/css">
+    <link href="project/css/home-base.css?141020161625" rel="stylesheet" type="text/css">
+    <link href="project/css/home-page.css?141020161625" rel="stylesheet" type="text/css">
 
-    <link href="project/css/info-base.css" rel="stylesheet" type="text/css">
-    <link href="project/css/info-page.css" rel="stylesheet" type="text/css">
+    <link href="project/css/info-base.css?141020161625" rel="stylesheet" type="text/css">
+    <link href="project/css/info-page.css?141020161625" rel="stylesheet" type="text/css">
 
-    <link href="project/css/contact-base.css" rel="stylesheet" type="text/css">
-    <link href="project/css/contact-page.css" rel="stylesheet" type="text/css">
+    <link href="project/css/contact-base.css?141020161625" rel="stylesheet" type="text/css">
+    <link href="project/css/contact-page.css?141020161625" rel="stylesheet" type="text/css">
 
-    <link href="project/css/portfolio-base.css" rel="stylesheet" type="text/css">
-    <link href="project/css/portfolio-page.css" rel="stylesheet" type="text/css">
+    <link href="project/css/portfolio-base.css?141020161625" rel="stylesheet" type="text/css">
+    <link href="project/css/portfolio-page.css?141020161625" rel="stylesheet" type="text/css">
 
     <!-- Camera for projects -->
     <script type="text/javascript" src="project/js/camera.min.js"></script>
     <link href="project/css/camera.css" rel="stylesheet" type="text/css">
-    <link href="project/css/gallery.css" rel="stylesheet" type="text/css">
+    <link href="project/css/gallery-base.css?141020161625" rel="stylesheet" type="text/css">
+    <link href="project/css/gallery-page.css?141020161625" rel="stylesheet" type="text/css">
 
     <script type="text/javascript">
     /*
@@ -85,11 +85,10 @@
 <body>
 <div class="se-pre-con"></div>
 <div id="web-content" style="display:none;"> <!-- Loading -->
-	
 	<!-- ================== Header ================== -->
     <div id="fixed-top" class="row not-extended page-top">
         <div class="span-4 span-large-4">
-            <img class="logo" src="project/img/welcome/logo.png">
+            <img class="logo" src="project/img/welcome/logo.png" style="width: 280px; margin-top: -5px">
         </div>
         <div class="span-8 span-large-8">
             <a id="nav-trigger" class="fa fa-bars fa-2x" href="#mobile-menu"></a>
@@ -97,9 +96,10 @@
         <div class="span-8 span-large-8">
             <nav id="menubar" class="navigation">
                 <ul>
-                    <li><a id="home-button" class="now" href="javascript:showView('home-button', '#home')">INICIO</a></li>
-                    <li><a id="dss-button" href="javascript:showView('dss-button', '#dss')">DSS</a></li>
-                    <li><a id="projects-button" href="javascript:showView('projects-button', '#projects')">PROYECTOS</a></li>
+                    <li><a id="home-button" class="now" href="#home" onclick="javascript:showView('home-button', '#home')">INICIO</a></li>
+                    <li><a id="dss-button" href="#dss" onclick="javascript:showView('dss-button', '#dss')">DSS</a></li>
+                    <li><a id="projects-button" href="#projects" onclick="javascript:showView('projects-button', '#projects')">PROYECTOS</a></li>
+                    <li><a id="contact-button" href="#contact" onclick="javascript:showView('contact-button', '#contact')">CONTACTO</a></li>
                     <li id="search-area">
                         <input id="search-text" type="text" placeholder="Búsqueda..." onblur="javascript:hideSearchBox()">
                     </li>
@@ -125,21 +125,40 @@
         <div id="project3-info"><?php include "views/projects/project3.html" ?></div>
         <div id="project4-info"><?php include "views/projects/project4.html" ?></div>
     </div>
+    <script type="text/javascript">
+        $(function() {
+          $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1200);
+                return false;
+              }
+            }
+          });
+        });
+    </script>
     <!-- ************************** End of Main Content ************************* -->
 
     <!-- ================== Footer ================== -->
-    <footer class="row not-extended">
-        <div class="span-12 span-large-12"><img src="project/img/footer-image.png"></div>
+    <footer id="footer" class="row not-extended">
+        <div class="span-12 span-large-12">
+            <img src="project/img/footer-image.png" style="margin-bottom: -15px"><br>
+            <b style="font-size: 10px; letter-spacing: 1px">DSS Estructuras. © Todos los derechos reservados.</b>
+        </div>
     </footer>
     <!-- ================== End of Footer ================== -->
 
     <!-- ================== Mobile Menu ================== -->
     <div id="mobile-menu" class="mobile-nav">
         <ul>
-            <li><a href="javascript:showView('home-button', '#home')">INICIO</a></li>
-            <li><a href="javascript:showView('dss-button', '#dss')">DSS</a></li>
-            <li><a href="javascript:showView('projects-button', '#projects')">PROYECTOS</a></li>
-            <li><a href="javascript:showView('contact-button', '#contact')">CONTÁCTO</a></li>
+            <li><a href="javascript:showView('home-button', '#home', null, 'mobile')">INICIO</a></li>
+            <li><a href="javascript:showView('dss-button', '#dss', null, 'mobile')">DSS</a></li>
+            <li><a href="javascript:showView('projects-button', '#projects', null, 'mobile')">PROYECTOS</a></li>
+            <li><a href="javascript:showView('contact-button', '#contact', null, 'mobile')">CONTACTO</a></li>
         </ul>
     </div>
     <!-- ================== End of Mobile Menu ================== -->

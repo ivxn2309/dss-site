@@ -8,47 +8,50 @@ Green: #94bb4d; (148,187,77)
 Gray:  #9a9798; (154, 151, 152)
 */
 
-@media only screen and (min-width: 35em){ /* 560px */
-	/* ============================ Projects ================================= */
-	.block-proj .zoomer {
-		height: 80.3vw;
-		margin-top: -81.5vw;
-	}
-
-	.block-proj .zoomer a {
-		line-height: 80.3vw;
-	}
-
-	.block-proj .description {
-		padding: 0;
-	}
-	/* ======================================================================= */
-}
-
-@media only screen and (min-width: 43.813em){ /* 701px */
+@media only screen and (min-width: 43.813em) { /* 701px */
 	/* ============================ Main Img ================================= */
 	.block-proj {
 		width: 95%;
 		margin-top: 7%;
 	}
-
-	.block-proj-right {
-		margin-left: 5%;
-	}
 	/* ======================================================================= */
-	/* ============================ Projects ================================= */
-	.block-proj .zoomer {
-		height: 39vw;
-		margin-top: -39.2vw;
+}
+
+@media only screen and (min-width: 57em){ /* 912px */
+	/* =========================== Portfolio ================================= */
+	#portfolio .proj {
+	    max-height: 360px;
+	    width: 35%;
 	}
 
-	.block-proj .zoomer a {
-		line-height: 39vw;
+	#portfolio .proj .zoomer {
+		height: 330px;
+	}
+
+	#portfolio .proj .zoomer a {
+		line-height: 330px;
+	}
+
+	#portfolio .firstp {
+		margin-left: 11.5%;
+		margin-right: 7.5%;
+	}
+
+	#portfolio .secondp {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	#portfolio .proj .label {
+		font-size: 0.75em;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-top: 0%;
 	}
 	/* ======================================================================= */
 }
 
-@media only screen and (min-width: 120em){ /* 1920px */
+@media only screen and (min-width: 120em) { /* 1920px */
 	/* ============================ Main Img ================================= */
 	.main-image-proj h1 {
 		font-size: 260px;

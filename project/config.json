@@ -9,7 +9,7 @@
 		"component-first": [],
 		"component": [],
 		"css": [],
-		"js": ["src/renderer.js"],
+		"js": ["src/render.js"],
 		"ui": "fuse",
 		"form-colour": "aqua",
 		"icon-font": "font-awesome"
