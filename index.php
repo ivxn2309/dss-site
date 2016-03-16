@@ -40,6 +40,9 @@
     <!-- Hammer -->
     <script src="project/component/hammerjs/hammer.js"></script>
 
+    <!-- Animation of numbers -->
+    <script type="text/javascript" src="project/js/jquery.animateNumber.min.js"></script>
+
     <!-- DSS Scripts -->
     <script src="project/js/src/events.js?141020161625"></script>
     <script src="project/js/src/script.js?141020161625"></script>    
