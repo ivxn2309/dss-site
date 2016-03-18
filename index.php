@@ -87,6 +87,11 @@
 </head>
 <body>
 <div class="se-pre-con"></div>
+<script type="text/javascript">
+    var img = new Image();
+    img.src = 'project/img/loader.gif';
+    $('.se-pre-con').css('background-image', 'url("' + img.src + '?x=' + Date.now() + '")' );
+</script>
 <div id="web-content" style="display:none;"> <!-- Loading -->
 	<!-- ================== Header ================== -->
     <div id="fixed-top" class="row not-extended page-top">
@@ -114,7 +119,6 @@
         </div>
     </div>
     <!-- ================== End of Header ================== -->
-
     <!-- ***************************** Main Content ***************************** -->
     <div id="maincontent">
         <!-- Load main content pages -->
@@ -129,6 +133,7 @@
         <div id="project4-info"><?php include "views/projects/project4.html" ?></div>
     </div>
     <script type="text/javascript">
+    /* This function allows a smooth scroll */
         $(function() {
           $('a[href*="#"]:not([href="#"])').click(function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -165,18 +170,12 @@
         </ul>
     </div>
     <!-- ================== End of Mobile Menu ================== -->
-
-    <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYA3pM4DiDiDsTK02z77FdsdEY_NBpK20&callback=initMap" type="text/javascript"></script>-->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCD2rNOPtKSTk_s8Z7YdWzjs_xHWiAGXi0" type="text/javascript"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
     <script src="project/js/src/maps.js" type="text/javascript"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" type="text/javascript"></script>
-
-<!-- This scripts are used to manage the asynchronous load -->
-<!--
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="project/js/app.js"></script>
-<script type="text/javascript" src="project/js/src/renderer.js"></script>
--->
+    <script type="text/javascript">
+        initMap();
+    </script>
 </div><!-- End Loading -->
 
 <!-- Webplate -->

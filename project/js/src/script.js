@@ -22,7 +22,6 @@ $( document ).ready(function(){
         var metrics_offset = ($("#metrics").offset().top) - 300;
         if( $(window).scrollTop() > metrics_offset && !work_preview && !material_passed) {
             material_passed = true;
-            console.log("En la zona");
             //animateNumber($("#var_num_30"), 35);
             $('#var_num_30').animateNumber({ number: 30 });
             $('#cab_num_111').animateNumber({ number: 111 });

@@ -1,6 +1,4 @@
 var mainmap;
-var contactmap;
-
 var googleMapStyle1;
 var googleMapStyle2;
 var googleMapType;
@@ -108,18 +106,13 @@ function initMap() {
 	];
 
 	mainmap = renderMap([20.634039, -103.469000], 15, 'googleMap', mainmap, googleMapStyle1);
-	contactmap = renderMap([20.634039, -103.464467], 15, 'map-contact', contactmap, googleMapStyle2);
 
 	//Show Marker
 	plotMapPoint(20.627659, -103.449177,"https://www.google.com.mx/maps/place/20%C2%B039'57.2%22N+103%C2%B023'01.0%22W/@20.627807,-103.4493126,17.25z/data=!4m2!3m1!1s0x0:0x0", mainmap);
-	plotMapPoint(20.627659, -103.449177,"https://www.google.com.mx/maps/place/20%C2%B039'57.2%22N+103%C2%B023'01.0%22W/@20.627807,-103.4493126,17.25z/data=!4m2!3m1!1s0x0:0x0", contactmap);
 
 	$( window ).on('resize',function(){
 	    google.maps.event.trigger(mainmap, 'resize');
 	    mainmap.panTo(googleMapMarker.getPosition());
-
-	    google.maps.event.trigger(contactmap, 'resize');
-	    contactmap.panTo(googleMapMarker.getPosition());
 	});
 
 	//This timeout is because the framework does not show correctly the map till resize 
@@ -127,10 +120,10 @@ function initMap() {
 }
 
 function resizeMaps() {
-	google.maps.event.trigger(mainmap, 'resize');
-	google.maps.event.trigger(contactmap, 'resize');
-	contactmap.panTo(googleMapMarker.getPosition());
-	mainmap.panTo(googleMapMarker.getPosition());
+	if(mainmap) {
+		google.maps.event.trigger(mainmap, 'resize');
+		mainmap.panTo(googleMapMarker.getPosition());
+	}
 }
 
 /*

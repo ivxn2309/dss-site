@@ -103,8 +103,8 @@ Gray:  #9a9798; (154, 151, 152)
 	font-size: 17px;
 	font-weight: lighter;
 	font-variant: small-caps;
-	text-decoration: none;
 	border: solid 1.5px #fff;
+	background-color: transparent; 
 
 	-webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -113,7 +113,10 @@ Gray:  #9a9798; (154, 151, 152)
 }
 
 #contact-form a:hover {
-	background-color: rgba(0,0,0,0.7); 
-	text-decoration: none;
+	background-color: rgba(0,0,0,0.7);
+}
+
+#contact-form a::after {
+	background-color: transparent;
 }
 /* ======================================================================= */
