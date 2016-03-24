@@ -25,6 +25,30 @@ Gray:  #9a9798; (154, 151, 152)
 		float: right;
 	}
 	/* ======================================================================= */
+	/* =========================== Servicios ================================= */
+    #servicios .row div p {
+    	opacity: 0;
+    	margin-top: -90px;
+    	margin-left: -8%;
+    	width: 100%;
+    	position: absolute;
+	}
+
+	#servicios .row div:hover p {
+		opacity: 1;
+		margin-top: 0px;
+	}
+
+	#servicios .row div:hover h3 {
+		color: #94bb4d;
+		font-size: 0.95rem;
+	}
+
+	#servicios .row div:hover img {
+	   -webkit-filter: grayscale(0);
+  		filter: grayscale(0);
+	}
+	/* ======================================================================= */
 	/* ============================= Metrics ================================= */
 	#metrics div {
 		margin-bottom: 0;

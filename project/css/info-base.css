@@ -83,18 +83,55 @@ Gray:  #9a9798; (154, 151, 152)
 
 #servicios h3 {
     color: #9a9798;
-    font-size: 1.0rem;
-    line-height: 1.7rem;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
     font-weight: bold;
     text-align: center;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
+
+    -webkit-transition: all 0.7s ease-in;
+    -moz-transition: all 0.7s ease-in;
+    -o-transition: all 0.7s ease-in;
+     transition: all 0.7s ease-in;
 }
 
 #servicios div {
-    padding: 2% 4%;
-    text-align: justify;
-    font-size: 0.7rem;
+    padding: 0% 2% 3%;
+}
+
+#servicios .row div {
+    cursor: pointer;
+}
+
+#servicios .row div img {
+	margin: 0 auto;
+    display: block;
+    width: 80px;
+
+	-webkit-filter: grayscale(1);
+     filter: grayscale(1);
+
+	-webkit-transition: all 0.8s ease-in;
+    -moz-transition: all 0.8s ease-in;
+    -o-transition: all 0.8s ease-in;
+     transition: all 0.8s ease-in;
+}
+
+#servicios .row div p {
+	position: initial;
+	text-align: justify;
+    font-size: 0.8rem;
     color: #9a9798;
+    display: block;
+    padding: 3% 6%;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px #000;
+    z-index: 100;
+
+    -webkit-transition: all 0.7s ease-in;
+    -moz-transition: all 0.7s ease-in;
+    -o-transition: all 0.7s ease-in;
+     transition: all 0.7s ease-in;
 }
 
 #servicios .col {
@@ -106,13 +143,7 @@ Gray:  #9a9798; (154, 151, 152)
 }
 
 #servicios .three-col div {
-	padding: 2% 8%;
-}
-
-#servicios img {
-    margin: 0 auto;
-    display: block;
-    width: 70px;
+	padding: 2% 2% 7%;
 }
 /* ======================================================================= */
 /* ============================= Metrics ================================= */
@@ -138,5 +169,6 @@ Gray:  #9a9798; (154, 151, 152)
 	font-size: 6vw;
 	color: #fff;
 	margin-bottom: 3%;
+    cursor: pointer;
 }
 /* ======================================================================= */
